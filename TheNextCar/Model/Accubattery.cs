@@ -7,7 +7,7 @@ namespace TheNextCar.Model
     class Accubattery
     {
         private int voltage;
-        private bool stateOn = false;
+        private Boolean stateOn = false;
 
         public Accubattery(int voltage)
         {
