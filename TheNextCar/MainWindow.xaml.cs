@@ -27,12 +27,11 @@ namespace TheNextCar
             AccubatteryController accubatteryController = new AccubatteryController(this);
             DoorController doorController = new DoorController(this);
             nextCar = new Car(accubatteryController, doorController, this);
-            Console.WriteLine("asdasdasd");
         }
         
         public void carEngineStatusChanged(string value, string message)
         {
-            status.Content = message;
+            Status.Content = message;
             StartButton.Content = value;
         }
 
@@ -73,7 +72,5 @@ namespace TheNextCar
             Console.WriteLine("Start Button");
             this.nextCar.toggleStartEngineButton();
         }
-
-
     }
 }
